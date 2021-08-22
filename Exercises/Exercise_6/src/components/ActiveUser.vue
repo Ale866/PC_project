@@ -1,0 +1,33 @@
+<template>
+  <section>
+    <h2>{{ username}}</h2>
+    <h3>{{userage }} Years</h3>
+  </section>
+</template>
+
+<script>
+export default {
+  props: {
+    username: {
+      type: String,
+      required: true,
+    },
+    userage: {
+      type: Number,
+      required: true,
+    },
+  },
+};
+</script>
+<style>
+html {
+  font-family: sans-serif;
+}
+section {
+  margin: 2rem auto;
+  max-width: 40rem;
+  border-radius: 12px;
+  border: 1px solid lightgray;
+  padding: 1rem;
+}
+</style>
